@@ -1,0 +1,51 @@
+@page
+@model Libreforum.Pages.Registration
+@{
+    ViewData["Title"] = "Registration";
+}
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div class="text-md-center allign-bottom">
+            <Form method="post">
+                <p style="font-size: 36px;">Registration</p> <br>
+                <div class="form-group">
+                    <label for="login">Login:</label><br>
+                    <input type="text" id="login" name="login" placeholder="example"><br>
+                    <small id="loginHelp" class="form-text text-muted">Lowercase latin text, special symbols not allowed.</small><br>
+
+                    <label for="displayName">Display Name:</label><br>
+                    <input class="input-form" type="text" id="displayName" name="displayName" placeholder="Example"><br>
+                    <small id="displayNameHelp" class="form-text text-muted">Latin text, special symbols not allowed.</small><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="e8x^!aM;pLe"><br>
+                    <small id="passwordHelp" class="form-text text-muted">8 - 32 symbols.</small><br>
+                    <input type="password" id="repeatPassword" name="repeatPassword" placeholder="Repeat Password"><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@ex.com"><br><br>
+                    <input type="email" id="repeatEmail" name="repeatEmail" placeholder="Repeat Email"><br><br>
+                </div>
+
+                <div class="form-group">
+                    <p class="cyan-text"> Gender: </p><br>
+                    <input type="radio" id="male" name="gender" value="Male" class="radio">
+                    <label class="white-text" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label class="white-text" for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label class="white-text" for="other">Other</label><br><br>
+                    <input type="submit" value="submit" class="btn btn-primary" />
+                </div>
+
+                
+            </Form>
+        </div>
+    </body>
+</html>

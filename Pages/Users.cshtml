@@ -1,0 +1,17 @@
+@page
+@model Libreforum.Pages.Users
+@{
+ViewData["Title"] = "Users";
+}
+
+<div class="text-left">
+    <tr><td>Id</td><text> - </text><td>DisplayName</td><text> -
+        </text><td>Email</td><text> - </text><td>Login</td><text> -
+        </text><td>RegistrationDate</td></tr><br><br>
+    @foreach (var user in Model.UserList)
+    {
+    <tr><td>@user.Id</td><text> - </text><td>@user.DisplayName</td><text> -
+        </text><td>@user.Email</td><text> - </text><td>@user.Login</td><text> -
+        </text><td>@user.RegistrationDate</td></tr><br>
+    }
+</div>

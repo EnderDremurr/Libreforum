@@ -1,0 +1,30 @@
+@page
+@model Libreforum.Pages.CreatePublication
+
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div class="text-md-center allign-bottom">
+            <Form method="post">
+                <p style="font-size: 36px;">Create new publication</p> <br>
+                <div class="form-group">
+                    <label for="title">Title: </label><br>
+                    <input type="text" id="title" name="title" placeholder="example"><br>
+
+                    <label for="content">Publication content:</label><br>
+                    <textarea type="content" name="content"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="submit" class="btn btn-primary" />
+                </div>
+
+                
+            </Form>
+        </div>
+    </body>
+</html>
